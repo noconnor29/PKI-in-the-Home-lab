@@ -1,7 +1,7 @@
 <!-- # PKI in the Home(lab) -->
 # Self-Hosted Certificate Authority and Mutual TLS with step-ca and YubiKeys
-## My Implementation
-- self-hosted CA on RPI with step-ca
+## Implementation Overview
+- self-hosted CA on RPI with `step-ca``
     - Yubikey as low cost HSM, device attestation for my other Yubis
     - remote clients over Tailscale
 - Caddy Web Server as ACME client
@@ -54,11 +54,10 @@ Enter `step-ca`: https://github.com/smallstep/certificates
 - greater security through passive revocation
 - the smug satisfaction of an over-engineered solution
 
+## Detailed Implementation
+Coming soon!
+
 ## Future Directions
-- use SSH certificates rather than keys.
-- put it on the public internet. Uses? Github Actions certificates rather than hardcoded creds.
-
-
-
-
-
+These might be diminishing returns since I have basically met these needs in other ways.
+- use SSH certificates rather than keys 
+- put a CA on the public internet. Uses? Github Actions certificates rather than hardcoded creds. What else?...
