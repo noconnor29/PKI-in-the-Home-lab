@@ -36,10 +36,10 @@ By embracing very short-lived certificates, we can eliminate the need for revoca
 ## ...Require Modern Solutions
 So how do we achieve all pros while avoiding the cons? Just r!un your own certificate authority! 
 
-Enterprise admins may be familiar with Active Directory Certificate Services but that
-&nbsp;&nbsp;&nbsp;&nbsp;❌ won't run on a spare Raspberry Pi
-&nbsp;&nbsp;&nbsp;&nbsp;❌ needs expensive licenses
-&nbsp;&nbsp;&nbsp;&nbsp;❌ isn't open source
+Enterprise admins may be familiar with Active Directory Certificate Services but that<br>
+&nbsp;&nbsp;&nbsp;&nbsp;❌ won't run on a spare Raspberry Pi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;❌ needs expensive licenses<br>
+&nbsp;&nbsp;&nbsp;&nbsp;❌ isn't open source<br>
 
 Enter `step-ca`[<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="20" height="20">](https://github.com/smallstep/certificates)
 - configurable certificate lifetimes (default: 24h)
