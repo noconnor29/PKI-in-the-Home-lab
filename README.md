@@ -29,7 +29,7 @@ Security and ease of use are often opposing goals and certificates can certainly
 
 But once you *stop* using one, how do you tell the world that they should no longer trust an otherwise valid certificate? Smallstep has a [great blog post](https://smallstep.com/blog/passive-revocation/) exploring this problem. In summary, smart people have come up with several ways approaches but none are ideal.
 
-The two primary solutions, Certificate Revocation Lists (CRLs) and Online Certificate Status Protocol (OSCP), both rely on clients to actively check validity and can cause performance issues in certain contexts.
+The two primary solutions, Certificate Revocation Lists (CRLs) and Online Certificate Status Protocol (OSCP), rely on clients to actively check validity and can cause performance issues in certain contexts.
 
 By embracing very short-lived certificates, we can eliminate the need for revocation mechanisms entirely. Smallstep calls this *passive revocation*.
 
@@ -71,8 +71,10 @@ I took a look at my threat model and risk tolerance and wanted to make some twea
 Kind of. But I'm not that concerned if I lose the Yubikey. The private key can't be used without entering a passcode and can't be extracted from the physical key. Beyond that... **there's no technological defense against the $5 wrench.**
 
 <p align="center">
-  <img src="https://imgs.xkcd.com/comics/security.png" alt="Security by xkcd">
+  <img src="https://imgs.xkcd.com/comics/security.png" alt="Security, by xkcd">
 </p>
+
+Image source: [xkcd](https://xkcd.com/538/)
 
 All I need to do is add a new hardware key to the CA policies, remove the old one, issue a new cert, and I'm back in business.
 
