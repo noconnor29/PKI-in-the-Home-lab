@@ -72,13 +72,14 @@ Kind of. But I'm not that concerned if I lose the Yubikey. The private key can't
 
 <p align="center">
   <img src="https://imgs.xkcd.com/comics/security.png" alt="Security, by xkcd">
+  <br>
+  <small>Image source: <a href="https://xkcd.com/538/">xkcd</a></small>
 </p>
+<br>
+All I need to do is add a new hardware key to the CA policies, remove the old one, issue a new cert, and I'm back in business!
+<br><br>
 
-Image source: [xkcd](https://xkcd.com/538/)
-
-All I need to do is add a new hardware key to the CA policies, remove the old one, issue a new cert, and I'm back in business.
-
-And if the Pi shuffles off its silicon coil, I have the setup documented and it takes about an hour and the root certificate should be safe on the HSM - or create a new one. I could make an Ansible playbook for the setup but the time investment doesn't seem worthwhile. See: ["Is It Worth the Time?"](https://xkcd.com/1205), another obligatory xkcd.
+And if the Pi shuffles off its silicon coil, I have the setup documented and it takes about an hour and the root certificate should be safe on the HSM - or create a new one. I could make an Ansible playbook for the setup but the time investment doesn't seem worthwhile. See: [Is It Worth the Time?](https://xkcd.com/1205), another obligatory xkcd.
 
 ## Future Directions
 These are some ways I might extend my CA in the future. Though it might be diminishing returns since I've met these needs in other ways.
