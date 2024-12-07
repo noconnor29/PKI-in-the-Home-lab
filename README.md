@@ -2,8 +2,8 @@
 # Self-Hosted Certificate Authority and Mutual TLS with step-ca and YubiKeys
 ## Table of Contents
 1. [My Journey in PKI](#my-journey-in-pki)
-2. [Modern Problems...](#modern-problems)
-3. [...Require Modern Solutions](#require-modern-solutions)
+2. [Modern Problems](#modern-problems)
+3. [Require Modern Solutions](#require-modern-solutions)
 4. [Implementation Overview](#implementation-overview)
 5. [Future Directions](#future-directions)
 
